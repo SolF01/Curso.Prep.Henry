@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 5;
+const nuevoModulo = 21 % 2 === 5;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -44,7 +44,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return y - x 
+  return x - y 
 }
 
 function multiplica(x, y) {
@@ -100,7 +100,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  x % y 
+ return x % y 
 
 }
 
@@ -139,7 +139,7 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return number**exponent
+  return num**exponent
 }
 
 function redondearNumero(num) {
@@ -169,7 +169,7 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if (numero > 0) return "Es positivo"
   if (numero < 0) return "Es negativo"
-  if (numero = 0) return false
+  if (numero === 0) return false
 
 }
 
@@ -193,7 +193,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  "Hola" + nombre + "!"
+   return "Hola" + " " + nombre + "!"
 
 }
 
@@ -218,7 +218,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  (base * altura) / 2
+  return (base * altura) / 2
 
 }
 
@@ -227,7 +227,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  euro * 1,20
+  return  euro * 1.20
 }
 
 
@@ -238,11 +238,11 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if (letra.length > 1) return "Dato incorrecto"
-  if (letra === a) return "Es vocal"
-  if (letra === e) return "Es vocal"
-  if (letra === i) return "Es vocal"
-  if (letra === o) return "Es vocal"
-  if (letra === u) return "Es vocal"
+  if (letra === "a") return "Es vocal"
+  if (letra === "e") return "Es vocal"
+  if (letra === "i") return "Es vocal"
+  if (letra === "o") return "Es vocal"
+  if (letra === "u") return "Es vocal"
   else return "Dato incorrecto"
   
 
